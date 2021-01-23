@@ -8,15 +8,15 @@ info:
   description:
     $ref: description.md
 tags:
-  - name: Echo
-    description: Example echo operations
-  - name: User
-    description: Operations about user
+  - name: Addresses
+    description: >
+      A Stargate address is a coordinate system used by a Stargate to determine the position of a target gate 
+      in the Stargate Network. They are composed of a series of glyphs, at least seven depending on the 
+      intended destination, which when entered in the correct order allow the Stargate to establish a wormhole 
+      with another gate at the destination ([source](https://stargate.fandom.com/wiki/Stargate_address)).
 paths:
-  '/users/{username}':
-    $ref: 'paths/users@{username}.yaml'
-  /echo:
-    $ref: paths/echo.yaml
+  /addresses:
+    $ref: paths/addresses.yaml
 components:
   securitySchemes:
     api_key:

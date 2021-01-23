@@ -1,0 +1,17 @@
+get:
+  tags:
+    - Addresses
+  summary: List addresses
+  description: List known Stargate addresses
+  operationId: listAddresses
+  responses:
+    '200':
+      description: OK
+      content:
+        application/json:
+          schema:
+            type: string
+          examples:
+            response:
+              value: Hello world!
+
