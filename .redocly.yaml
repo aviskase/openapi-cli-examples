@@ -7,7 +7,6 @@ lint:
   rules:
     no-unused-components: warning
 referenceDocs:
-  htmlTemplate: ./docs/index.html
   theme:
     colors:
       primary:
