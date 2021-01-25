@@ -24,3 +24,11 @@ properties:
       updated_at:
         type: string
         format: date-time
+  _embedded:
+    description: Naive embeds
+    type: object
+    properties:
+      available_gates:
+        type: array
+        items:
+          $ref: Stargate.yaml
