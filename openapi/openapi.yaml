@@ -25,6 +25,8 @@ paths:
     $ref: paths/addresses@{id}.yaml
   /stargates:
     $ref: paths/stargates.yaml
+  /stargates/{id}:
+    $ref: paths/stargates@{id}.yaml
 components:
   securitySchemes:
     api_key:
