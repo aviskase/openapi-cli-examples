@@ -1,0 +1,20 @@
+allOf:
+  - $ref: BaseAddress.yaml
+  - type: object
+    required:
+      - in_galaxy_address
+    properties:
+      in_galaxy_address:
+        type: array
+        description: Address used for dialing from the locations in the same galaxy.
+        items:
+          $ref: Glyph.yaml
+      outside_galaxy_address:
+        type: array
+        description: Address used for dialing from the locations in other galaxies.
+        items:
+          $ref: Glyph.yaml
+      point_of_origin:
+        allOf:
+          - $ref: Glyph.yaml
+          - description: Glyph used for [dialing from this address](https://stargate.fandom.com/wiki/Point_of_origin).

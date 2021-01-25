@@ -1,0 +1,3 @@
+oneOf:
+  - $ref: UniqueAddress.yaml
+  - $ref: DriftingAddress.yaml

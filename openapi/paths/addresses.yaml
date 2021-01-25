@@ -10,8 +10,5 @@ get:
       content:
         application/json:
           schema:
-            type: string
-          examples:
-            response:
-              value: Hello world!
+            $ref: ../components/schemas/AddressCollection.yaml
 

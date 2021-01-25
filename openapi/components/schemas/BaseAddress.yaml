@@ -1,0 +1,28 @@
+type: object
+required:
+  - id
+properties:
+  id:
+    type: string
+    readOnly: true
+    minLength: 1
+  status:
+    type: object
+    readOnly: true
+    properties:
+      can_connect:
+        type: boolean
+      description:
+        type: string
+      updated_at:
+        type: string
+        format: date-time
+  last_known_position:
+    type: object
+    readOnly: true
+    properties:
+      coordinates:
+        $ref: SpaceCoordinates.yaml
+      updated_at:
+        type: string
+        format: date-time

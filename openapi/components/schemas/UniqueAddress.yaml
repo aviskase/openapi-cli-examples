@@ -1,0 +1,11 @@
+allOf:
+  - $ref: BaseAddress.yaml
+  - type: object
+    required:
+      - unique_address
+    properties:
+      unique_address:
+        type: array
+        description: Address used for dialing from any location. Isn't affected by stellar drift. [Uniquely connected to the gate](https://stargate.fandom.com/wiki/Stargate_address#Nine-chevron).
+        items:
+          $ref: Glyph.yaml
