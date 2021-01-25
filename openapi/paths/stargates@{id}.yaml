@@ -15,3 +15,22 @@ get:
             $ref: ../components/schemas/Stargate.yaml
     '404':
       $ref: ../components/responses/NotFound.yaml
+patch:
+  tags:
+    - Stargates
+  summary: Update Stargate info
+  description: Update information about the Stargate
+  operationId: updateStargate
+  requestBody:
+    $ref: ../components/requestBodies/UpdateStargate.yaml
+  responses:
+    '200':
+      description: OK
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/Stargate.yaml
+    '400':
+      $ref: ../components/responses/ValidationError.yaml
+    '404':
+      $ref: ../components/responses/NotFound.yaml

@@ -3,15 +3,19 @@ properties:
   id:
     $ref: ImmutableId.yaml
   address_id:
-    $ref: Id.yaml
+    allOf:
+      - $ref: Id.yaml
+      - nullable: true
   state:
     type: string
+    nullable: true
     enum:
       - OK
       - DESTROYED
       - BURIED
   environment:
     type: string
+    nullable: true
     enum:
       - ABOVE_SURFACE
       - UNDERWATER
