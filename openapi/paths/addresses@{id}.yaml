@@ -1,0 +1,17 @@
+parameters:
+  - $ref: ../components/parameters/resourceId.yaml
+get:
+  tags:
+    - Addresses
+  summary: Get address info
+  description: Get information about the address
+  operationId: getAddress
+  responses:
+    '200':
+      description: OK
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/Address.yaml
+    '404':
+      $ref: ../components/responses/NotFound.yaml

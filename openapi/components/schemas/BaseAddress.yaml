@@ -3,9 +3,7 @@ required:
   - id
 properties:
   id:
-    type: string
-    readOnly: true
-    minLength: 1
+    $ref: ../schemas/ImmutableId.yaml
   status:
     type: object
     readOnly: true

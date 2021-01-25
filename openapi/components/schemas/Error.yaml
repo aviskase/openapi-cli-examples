@@ -1,0 +1,15 @@
+type: object
+description: Error in [RFC7807](https://tools.ietf.org/html/rfc7807) problem detail format
+properties:
+  type:
+    type: string
+  title:
+    type: string
+  status:
+    type: number
+  detail:
+    type: string
+  instance:
+    type: string
+required:
+  - title

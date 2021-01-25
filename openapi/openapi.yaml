@@ -17,6 +17,8 @@ tags:
 paths:
   /addresses:
     $ref: paths/addresses.yaml
+  /addresses/{id}:
+    $ref: paths/addresses@{id}.yaml
 components:
   securitySchemes:
     api_key:

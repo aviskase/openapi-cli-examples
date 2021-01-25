@@ -1,0 +1,6 @@
+type: string
+description: The resource identifier.
+minLength: 1
+maxLength: 500
+example: 4f6cf35x-2c4y-483z-a0a9-158621f77a21
+readOnly: true
