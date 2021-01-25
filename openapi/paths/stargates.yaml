@@ -1,0 +1,18 @@
+post:
+  tags:
+    - Stargates
+  summary: Add Stargate
+  description: Add new Stargate information
+  operationId: addStargate
+  requestBody:
+    $ref: ../components/requestBodies/Stargate.yaml
+  responses:
+    '200':
+      description: Stargate added successfully
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/Stargate.yaml
+    '400':
+      $ref: ../components/responses/ValidationError.yaml
+

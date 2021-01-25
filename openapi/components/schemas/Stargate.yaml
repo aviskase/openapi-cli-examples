@@ -1,0 +1,19 @@
+type: object
+properties:
+  id:
+    $ref: ImmutableId.yaml
+  address_id:
+    $ref: Id.yaml
+  state:
+    type: string
+    enum:
+      - OK
+      - DESTROYED
+      - BURIED
+  environment:
+    type: string
+    enum:
+      - ABOVE_SURFACE
+      - UNDERWATER
+      - SURFACE
+      - INSIDE_OBJECT

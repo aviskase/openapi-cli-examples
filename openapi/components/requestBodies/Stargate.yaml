@@ -1,0 +1,6 @@
+content:
+  application/json:
+    schema:
+      $ref: ../schemas/Stargate.yaml
+description: Stargate resource.
+required: true

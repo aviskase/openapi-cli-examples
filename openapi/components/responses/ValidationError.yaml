@@ -1,0 +1,5 @@
+description: Invalid data was sent.
+content:
+  application/problem+json:
+    schema:
+      $ref: ../schemas/Error.yaml
