@@ -7,7 +7,13 @@ lint:
   rules:
     no-unused-components: warning
 referenceDocs:
+  requiredPropsFirst: true
+  hideHostname: true
   theme:
     colors:
       primary:
-        main: "#32329f"
+        main: "#0063c5"
+    menu:
+      backgroundColor: "#edf6ff"
+    rightPanel:
+      backgroundColor: "#153345"
