@@ -6,6 +6,7 @@ lint:
     - recommended
   rules:
     no-unused-components: warning
+    no-empty-servers: off
 referenceDocs:
   requiredPropsFirst: true
   hideHostname: true
