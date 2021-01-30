@@ -7,11 +7,12 @@
   },
   "private": true,
   "scripts": {
-    "start": "openapi preview-docs",
-    "build:json": "openapi bundle -o dist/openapi --ext yaml",
-    "build:yaml": "openapi bundle -o dist/openapi --ext json",
-    "build": "npm run build:json && npm run build:yaml",
-    "test": "openapi lint",
-    "docs": "node plugins/prepareOptions.js && redoc-cli bundle dist/openapi.yaml -o dist/redoc.html --options .redoc.json"
+    "preview": "openapi preview-docs",
+    "bundle:json": "openapi bundle -o dist/openapi --ext yaml",
+    "bundle:yaml": "openapi bundle -o dist/openapi --ext json",
+    "bundle": "npm run bundle:json && npm run bundle:yaml",
+    "lint": "openapi lint",
+    "docs": "node plugins/prepareOptions.js && redoc-cli bundle dist/openapi.yaml -o dist/redoc.html --options .redoc.json",
+    "build": "npm run lint && npm run bundle && npm run docs"
   }
 }
