@@ -11,11 +11,17 @@ Example API for `openapi-cli` tutorial.
 
 ### Usage
 
-#### `npm start`
+#### `npm run preview`
 Starts the reference docs preview server.
 
-#### `npm run build`
+#### `npm run bundle`
 Bundles the description docs to the dist folder.
 
-#### `npm test`
+#### `npm run lint`
 Validates the description docs.
+
+#### `npm run docs`
+Generates static reference docs.
+
+#### `npm run build`
+Lint, bundle, and generate static reference docs.
