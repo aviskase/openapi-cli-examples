@@ -1,6 +1,7 @@
 # See https://redoc.ly/docs/cli/configuration/ for more information.
 apiDefinitions:
-  main: openapi/openapi.yaml
+  gates: openapi/gates.yaml
+  addresses: openapi/addresses.yaml
 lint:
   extends:
     - recommended
