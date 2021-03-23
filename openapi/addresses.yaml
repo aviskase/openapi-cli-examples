@@ -1,7 +1,7 @@
 openapi: 3.0.3
 info:
   version: 1.0.0
-  title: Stargate Network
+  title: Stargate Network - Addresses
   license:
     name: Apache 2.0
     url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
@@ -14,19 +14,11 @@ tags:
       in the Stargate Network. They are composed of a series of glyphs, at least seven depending on the 
       intended destination, which when entered in the correct order allow the Stargate to establish a wormhole 
       with another gate at the destination ([source](https://stargate.fandom.com/wiki/Stargate_address)).
-  - name: Stargates
-    description: >
-      A Stargate is a device which create wormholes, allowing for near-instantaneous transportation between 
-      two distant points in space.  ([source](https://stargate.fandom.com/wiki/Stargate)).
 paths:
   /addresses:
     $ref: paths/addresses.yaml
   /addresses/{id}:
     $ref: paths/addresses@{id}.yaml
-  /stargates:
-    $ref: paths/stargates.yaml
-  /stargates/{id}:
-    $ref: paths/stargates@{id}.yaml
 components:
   securitySchemes:
     api_key:

@@ -1,0 +1,23 @@
+openapi: 3.0.3
+info:
+  version: 1.0.0
+  title: Stargate Network - Gates
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+  description:
+    $ref: description.md
+tags:
+  - name: Stargates
+    description: >
+      A Stargate is a device which create wormholes, allowing for near-instantaneous transportation between 
+      two distant points in space.  ([source](https://stargate.fandom.com/wiki/Stargate)).
+paths:
+  /stargates:
+    $ref: paths/stargates.yaml
+  /stargates/{id}:
+    $ref: paths/stargates@{id}.yaml
+components:
+  securitySchemes:
+    api_key:
+      $ref: components/securitySchemes/api_key.yaml
