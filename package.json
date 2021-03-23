@@ -7,12 +7,15 @@
   },
   "private": true,
   "scripts": {
-    "preview": "openapi preview-docs",
-    "bundle:json": "openapi bundle -o dist/openapi --ext yaml",
-    "bundle:yaml": "openapi bundle -o dist/openapi --ext json",
+    "preview:gates": "openapi preview-docs -p 8080 gates",
+    "preview:addresses": "openapi preview-docs -p 8081 addresses",
+    "bundle:json": "openapi bundle -o dist --ext yaml",
+    "bundle:yaml": "openapi bundle -o dist --ext json",
     "bundle": "npm run bundle:json && npm run bundle:yaml",
     "lint": "openapi lint",
-    "docs": "node plugins/prepareOptions.js && redoc-cli bundle dist/openapi.yaml -o dist/redoc.html --options .redoc.json",
+    "docs:gates": "node plugins/prepareOptions.js && redoc-cli bundle dist/gates.yaml -o dist/redoc-gates.html --options .redoc.json",
+    "docs:addresses": "node plugins/prepareOptions.js && redoc-cli bundle dist/addresses.yaml -o dist/redoc-addresses.html --options .redoc.json",
+    "docs": "npm run docs:gates && npm run docs:addresses",
     "build": "npm run lint && npm run bundle && npm run docs"
   }
 }
