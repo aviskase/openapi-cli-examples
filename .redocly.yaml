@@ -5,6 +5,11 @@ apiDefinitions:
 lint:
   extends:
     - recommended
+  plugins:
+    - './plugins/custom-preprocessors.js'
+  preprocessors:
+    custom-preprocessors/add-x-enum-to-description:
+      vendorExtension: x-aviskase-enum
   rules:
     no-unused-components: warning
     no-empty-servers: off
