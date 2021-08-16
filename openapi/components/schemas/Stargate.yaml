@@ -9,14 +9,15 @@ properties:
   state:
     type: string
     nullable: true
-    enum:
+    x-aviskase-enum:
       - OK
       - DESTROYED
       - BURIED
   environment:
     type: string
+    description: Last known place where gate is situated.
     nullable: true
-    enum:
+    x-aviskase-enum:
       - ABOVE_SURFACE
       - UNDERWATER
       - SURFACE
