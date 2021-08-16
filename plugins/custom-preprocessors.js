@@ -1,5 +1,5 @@
 //@ts-check
-const AddEnumToDescription = require('./ preprocessors/add-enum-to-description');
+const AddEnumToDescription = require('./preprocessors/add-enum-to-description');
 const id = 'custom-preprocessors';
 
 /** @type { import('@redocly/openapi-core/src/config/config').PreprocessorsConfig } */
