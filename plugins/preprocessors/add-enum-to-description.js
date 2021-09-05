@@ -14,7 +14,7 @@ function AddEnumToDescription(options) {
 }
 
 function appendToDescription(values, description) {
-  let additionalDescription = `Possible values: ${values.map(v => `\`${v}\``).join(', ')}`;
+  let additionalDescription = `Possible values: ${values.map(v => `\`${v}\``).join(', ')}.`;
   if (description) {
     return `${description}\n\n${additionalDescription}`;
   }
