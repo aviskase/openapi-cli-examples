@@ -18,6 +18,8 @@ lint:
       severity: error
       enumLikeProperties:
         - x-aviskase-enum
+    custom-rules/description-style:
+      severity: error
 referenceDocs:
   requiredPropsFirst: true
   hideHostname: true
