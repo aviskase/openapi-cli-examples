@@ -7,12 +7,17 @@ lint:
     - recommended
   plugins:
     - './plugins/custom-preprocessors.js'
+    - './plugins/custom-rules.js'
   preprocessors:
     custom-preprocessors/add-x-enum-to-description:
       vendorExtension: x-aviskase-enum
   rules:
     no-unused-components: warning
     no-empty-servers: off
+    custom-rules/uppercase-schema-enums:
+      severity: error
+      enumLikeProperties:
+        - x-aviskase-enum
 referenceDocs:
   requiredPropsFirst: true
   hideHostname: true
