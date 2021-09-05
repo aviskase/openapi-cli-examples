@@ -2,11 +2,11 @@ get:
   tags:
     - Addresses
   summary: List addresses
-  description: List known Stargate addresses
+  description: List known Stargate addresses.
   operationId: listAddresses
   responses:
     '200':
-      description: OK
+      description: OK.
       content:
         application/json:
           schema:

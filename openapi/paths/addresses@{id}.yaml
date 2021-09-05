@@ -4,11 +4,11 @@ get:
   tags:
     - Addresses
   summary: Get address info
-  description: Get information about the address
+  description: Get information about the address.
   operationId: getAddress
   responses:
     '200':
-      description: OK
+      description: OK.
       content:
         application/json:
           schema:

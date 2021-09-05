@@ -2,13 +2,13 @@ post:
   tags:
     - Stargates
   summary: Add Stargate
-  description: Add new Stargate information
+  description: Add new Stargate information.
   operationId: addStargate
   requestBody:
     $ref: ../components/requestBodies/Stargate.yaml
   responses:
     '200':
-      description: Stargate added successfully
+      description: Stargate added successfully.
       content:
         application/json:
           schema:

@@ -4,11 +4,11 @@ get:
   tags:
     - Stargates
   summary: Get Stargate info
-  description: Get information about the Stargate
+  description: Get information about the Stargate.
   operationId: getStargate
   responses:
     '200':
-      description: OK
+      description: OK.
       content:
         application/json:
           schema:
@@ -19,13 +19,13 @@ patch:
   tags:
     - Stargates
   summary: Update Stargate info
-  description: Update information about the Stargate
+  description: Update information about the Stargate.
   operationId: updateStargate
   requestBody:
     $ref: ../components/requestBodies/UpdateStargate.yaml
   responses:
     '200':
-      description: OK
+      description: OK.
       content:
         application/json:
           schema:
